@@ -9,7 +9,7 @@ class CreateGroup(LoginRequiredMixin, generic.CreateView):
     fields = ('name', 'description')
     model = Group
 
-class Group(generic.DetailView):
+class SingleGroup(generic.DetailView):
     model = Group
 
 class ListGroup(generic.ListView):
